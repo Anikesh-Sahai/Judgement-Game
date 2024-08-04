@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "src",
+    "paths": {
+      "@Apis/*": ["apis/*"],
+      "@Assets/*": ["assets/*"],
+      "@Hooks/*": ["hooks/*"],
+      "@Components/*": ["components/*"],
+      "@Constants/*": ["constants/*"],
+      "@Constants": ["constants/"],
+      "@Containers/*": ["containers/*"],
+      "@Models/*": ["models/*"],
+      "@Pages/*": ["pages/*"],
+      "@Routers/*": ["routers/*"],
+      "@Schemas/*": ["schemas/*"],
+      "@Sockets/*": ["sockets/*"],
+      "@Stores/*": ["stores/*"],
+      "@Stores": ["stores/"],
+      "@Utils/*": ["utils/*"],
+      "@Themes/*": ["themes/*"],
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["src", "vite.config.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

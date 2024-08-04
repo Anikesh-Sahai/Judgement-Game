@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #ee0f00 transparent;
+}
+
+.snackbarRoot {
+  background: #000;
+}
+
+.snackbarBottomRight {
+  margin-right: 20px;
+}
+
+.snackbarRoot .notistack-MuiContent {
+  padding: 3px 15px;
+}
+
+.MuiChartsTooltip-labelCell,
+.MuiChartsTooltip-valueCell {
+  color: white !important;
+  font-size: clamp(10px, 6px + 1vw + 0.5vh, 18px);
+}
+
+.MuiChartsTooltip-valueCell {
+  padding: 6px 10px !important;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.image-file-upload-icon {
+  display: none !important;
+  color: #222 !important;
+}
+
+.image-file-upload-icon.loading {
+  display: inline-block !important;
+}
